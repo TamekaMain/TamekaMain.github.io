@@ -25,12 +25,12 @@ img {
 
 /* ---------- 2) Core Theme Tokens ----------- */
 :root {
-  --brand: hsl(240, 3%, 60%);        /* primary colour */
-  --brand-2: #f6f26e;      /* accent colour */
-  --bg: #ffffff;           /* page background */
+  --brand: #f39292;        /* primary colour */
+  --brand-2: #f4f091;      /* accent colour */
+  --bg: #fffff2;           /* page background */
   --head: #f39292;         /* main header colour */
   --text: #222222;         /* default text */
-  --muted: #e29999;        /* secondary text */
+  --muted: #000000;        /* secondary text */
   --surface: #f6f8fb;      /* card/section bg */
   --radius: 12px;          /* rounded corners */
   --shadow: 0 4px 12px rgba(0,0,0,0.08);    /* Subtle shadow for depth */
@@ -84,6 +84,7 @@ a:hover, a:focus {
 /* ---------- 6) Header / Nav ---------------- */
 header {
   background-image: url(images/aestheticbackground.jpg);    /* Gradient background */
+  background-size: cover;
   color: rgb(255, 255, 255);                              /* White text */
   padding: 18px 0;                                          /* Vertical spacing */
   box-shadow: var(--shadow);                                /* Subtle shadow for depth */
@@ -195,7 +196,7 @@ th, td {
   text-align: left;           /* Aligns text to the left */
 }
 thead {
-  background-color: #fbf9ca; /* Light grey header background */
+  background-color: #fbf9ca; /* Light grey yellow background */
 }
 th {
   color: #000000;              /* Dark grey header text */
@@ -213,8 +214,8 @@ tr:nth-child(even) {
 }
 .project-card {
   flex: 1 1 150px;                /* Responsive card width */
-  background-color: #f8f7c3;    /* Light blue background */
-  border: 1px solid #a0a0a0;       /* Light border */
+  background-color: #fafaf1;    /* Light yellow background */
+  border: 1px solid #a0a0a0;       /* Light grey border */
   padding: 15px;                  /* Space inside card */
   border-radius: 8px;             /* Rounded corners */
   box-shadow: 1px 2px 4px rgba(0,0,0,0.1);      /* Soft shadow */
@@ -237,7 +238,7 @@ tr:nth-child(even) {
   gap: var(--spacing);                                            /* Space between grid items */
 }
 .card {
-  background: #FFECB2;          /* pale yellow background */
+  background: #ffffff;          /* White background */
   border-radius: var(--radius);   /* Rounded corners */
   box-shadow: var(--shadow);      /* Soft shadow */
   overflow: hidden;               /* Hides overflowing content */
@@ -310,7 +311,7 @@ footer {
   margin-top: 40px;          /* Space above footer */
   padding: 22px 0;           /* Vertical spacing */
   background: var(--brand);  /* Brand background */
-  color: #cfd7ff;          /* Light text colour */
+  color: #ffffff;          /* Light text colour */
 }
 footer p {
   color: white;     /* White paragraph text */
