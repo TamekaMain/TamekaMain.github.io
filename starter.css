@@ -213,7 +213,7 @@ tr:nth-child(even) {
   margin-top: 20px;                 /* Space above container */
 }
 .project-card {
-  flex: 1 1 150px;                /* Responsive card width */
+  flex: 1 1 350px;                /* Responsive card width */
   background-color: #fafaf1;    /* Light yellow background */
   border: 1px solid #a0a0a0;       /* Light grey border */
   padding: 15px;                  /* Space inside card */
