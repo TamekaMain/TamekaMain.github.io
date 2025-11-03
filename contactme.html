@@ -48,38 +48,48 @@
 						</ul>
 					</nav>
 
-				<!-- Main -->
+				<!-- Main area of content on this page-->
 					<div id="main">
 						<div class="inner">
 							<h1>Let's Get In Touch!</h1>
-							<section>
-								<!--Contact Form-->
-								<h2>Fill out the information below</h2>
-								<form id ="contact-form"  action="#https://formsubmit.co/e3a219d852746ca8f71a11f675a941b" method="post" autocomplete="on">
-									<div class="fields">
-										<div class="field half">
-										<!--Name-->
-											<input type="text" name="name" id="name" placeholder="Jane Doe" required minlength="2"> 
+							
+							<!-- This section is for-->
+							<section class="section">
+								<h2>Get in contact!</h2>
+								<form id="contact-form" action="https://formsubmit.co/e3a219d852746ca8f71a11f6756a941b" method="post" autocomplete="on">
+									<fieldset>
+										<!-- Form text input for Full Name-->
+										<label for="name">Full Name</label>
+										<input id="name" name="name" type="text" placeholder="Jane Doe" required minlength="2">
+										<!-- Form text input for Email-->
+										<label for="email">Email Address</label>
+										<input id="email" name="email" type="email" placeholder="name.lastname@example.com" required autocomplete="email">
+										<!--Form checkbox input for reason for contact-->
+										Reason for contact - Choose all that apply:
+										<input id="reason-collab" name="reason" type="checkbox" value="collaboration">
+										<label for="reason-collab"> Interest in collaborating</label>
+										<input id="reason-work" name="reason" type="checkbox" value="collaboration">
+										<label for="reason-work"> Work opportunity</label>
+										<input id="reason-other" name="reason" type="checkbox" value="collaboration">
+										<label for="reason-other"> Other</label>
+										<hr> <!-- Created anotherl line of serparation-->
+										<!--Form text input for message box-->
+										<div>
+											<label for="message">Message</label>
+											<Textarea id="message" name="message" type="message" placeholder="Your enquiry here" required minlength="4"></Textarea>
 										</div>
-										<!--Email-->
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="name.lastname@example.com" required autocomplete="email">
-										</div>
-										<!--Message box-->
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Your enquiry here..." required minlength="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary"/></li>
-									</ul>
+										<!--Honeypot anti-spam field-->
+										<input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
+										<button type="submit">Send</button> 
+									</fieldset>
 								</form>
 							</section>
 						</div>
 					</div>
 
 				<!-- Footer -->
-					......
+					<footer id="footer">
+						<div class="inner">
 							<section>
 								<h2>Follow</h2>
 								<ul class="icons">
@@ -93,7 +103,6 @@
 							</ul>
 						</div>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
